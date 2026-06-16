@@ -1,4 +1,4 @@
-PE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@ PE html>
         }
 
         .container {
-            max-width: 1600px;
+            max-width: 1800px;
             margin: 0 auto;
             background: white;
             padding: 30px;
@@ -49,7 +49,7 @@ PE html>
             width: 100%;
             border-collapse: collapse;
             text-align: center;
-            min-width: 1000px;
+            min-width: 1550px;
         }
 
         th, td {
@@ -60,7 +60,7 @@ PE html>
 
         th {
             font-weight: 600;
-            font-size: 1.05em;
+            font-size: 1.02em;
             background-color: #f8f9fa;
             color: #2c3e50;
         }
@@ -71,7 +71,7 @@ PE html>
             white-space: nowrap;
             color: #555;
             font-size: 0.9em;
-            min-width: 220px;
+            min-width: 270px;
         }
 
         .file-name {
@@ -80,13 +80,13 @@ PE html>
             font-weight: normal;
             display: block;
             margin-top: 4px;
-            max-width: 280px;
+            max-width: 340px;
             overflow: hidden;
             text-overflow: ellipsis;
         }
 
         audio {
-            width: 150px;
+            width: 140px;
             height: 36px;
             outline: none;
         }
@@ -122,7 +122,7 @@ PE html>
             }
 
             audio {
-                width: 130px;
+                width: 125px;
             }
         }
     </style>
@@ -133,253 +133,178 @@ PE html>
 <div class="container">
     <h1>Speech Enhancement Results Comparison</h1>
 
-    <!-- ===================== DNS-10dB ===================== -->
-    <h2>DNS-Challenge: -10 dB</h2>
-    <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th style="text-align: left;">Condition (SNR)</th>
-                    <th>Clean</th>
-                    <th>CMGAN</th>
-                    <th>LGDK-Net</th>
-                    <th>Mamba-SEUNet</th>
-                    <th>MP-SENet</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td class="condition-col">-10 dB<span class="file-name">11.wav</span></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/clean/11.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/CMGAN/11.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/LGDK-Net/11.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/Mamba-SEUNet/11.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/MP-SENet/11.wav"></audio></td>
-                </tr>
-
-                <tr>
-                    <td class="condition-col">-10 dB<span class="file-name">95.wav</span></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/clean/95.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/CMGAN/95.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/LGDK-Net/95.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/Mamba-SEUNet/95.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/MP-SENet/95.wav"></audio></td>
-                </tr>
-
-                <tr>
-                    <td class="condition-col">-10 dB<span class="file-name">76.wav</span></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/clean/76.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/CMGAN/76.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/LGDK-Net/76.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/Mamba-SEUNet/76.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/MP-SENet/76.wav"></audio></td>
-                </tr>
-
-                <tr>
-                    <td class="condition-col">-10 dB<span class="file-name">84.wav</span></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/clean/84.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/CMGAN/84.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/LGDK-Net/84.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/Mamba-SEUNet/84.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-10dB/MP-SENet/84.wav"></audio></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-
-    <!-- ===================== DNS-15dB ===================== -->
-    <h2>DNS-Challenge: -15 dB</h2>
-    <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th style="text-align: left;">Condition (SNR)</th>
-                    <th>Clean</th>
-                    <th>CMGAN</th>
-                    <th>LGDK-Net</th>
-                    <th>Mamba-SEUNet</th>
-                    <th>MP-SENet</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td class="condition-col">-15 dB<span class="file-name">11.wav</span></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/clean/11.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/CMGAN/11.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/LGDK-Net/11.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/Mamba-SEUNet/11.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/MP-SENet/11.wav"></audio></td>
-                </tr>
-
-                <tr>
-                    <td class="condition-col">-15 dB<span class="file-name">145.wav</span></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/clean/145.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/CMGAN/145.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/LGDK-Net/145.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/Mamba-SEUNet/145.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/MP-SENet/145.wav"></audio></td>
-                </tr>
-
-                <tr>
-                    <td class="condition-col">-15 dB<span class="file-name">94.wav</span></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/clean/94.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/CMGAN/94.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/LGDK-Net/94.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/Mamba-SEUNet/94.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/MP-SENet/94.wav"></audio></td>
-                </tr>
-
-                <tr>
-                    <td class="condition-col">-15 dB<span class="file-name">116.wav</span></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/clean/116.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/CMGAN/116.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/LGDK-Net/116.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/Mamba-SEUNet/116.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/DNS-15dB/MP-SENet/116.wav"></audio></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-
-    <!-- ===================== NoiseX-92 -5dB ===================== -->
-    <h2>NoiseX-92: -5 to 0 dB</h2>
-    <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th style="text-align: left;">Condition (SNR)</th>
-                    <th>Clean</th>
-                    <th>CMGAN</th>
-                    <th>LGDK-Net</th>
-                    <th>Mamba-SEUNet</th>
-                    <th>MP-SENet</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td class="condition-col">
-                        Babble / SNR -1.0 dB
-                        <span class="file-name">0116_clean_fileid_127...</span>
-                    </td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/clean/0116_clean_fileid_127__babble__start636389__-5_0dB__snr-1.0__tl-21.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/CMGAN/0116_clean_fileid_127__babble__start636389__-5_0dB__snr-1.0__tl-21.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/LGDK-Net/0116_clean_fileid_127__babble__start636389__-5_0dB__snr-1.0__tl-21.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/Mamba-SEUNet/0116_clean_fileid_127__babble__start636389__-5_0dB__snr-1.0__tl-21.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/MP-SENet/0116_clean_fileid_127__babble__start636389__-5_0dB__snr-1.0__tl-21.wav"></audio></td>
-                </tr>
-
-                <tr>
-                    <td class="condition-col">
-                        Machinegun / SNR -4.0 dB
-                        <span class="file-name">0138_clean_fileid_143...</span>
-                    </td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/clean/0138_clean_fileid_143__machinegun__start1733285__-5_0dB__snr-4.0__tl-26.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/CMGAN/0138_clean_fileid_143__machinegun__start1733285__-5_0dB__snr-4.0__tl-26.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/LGDK-Net/0138_clean_fileid_143__machinegun__start1733285__-5_0dB__snr-4.0__tl-26.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/Mamba-SEUNet/0138_clean_fileid_143__machinegun__start1733285__-5_0dB__snr-4.0__tl-26.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/MP-SENet/0138_clean_fileid_143__machinegun__start1733285__-5_0dB__snr-4.0__tl-26.wav"></audio></td>
-                </tr>
-
-                <tr>
-                    <td class="condition-col">
-                        Destroyerops / SNR -4.0 dB
-                        <span class="file-name">0092_clean_fileid_274...</span>
-                    </td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/clean/0092_clean_fileid_274__destroyerops__start318752__-5_0dB__snr-4.0__tl-31.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/CMGAN/0092_clean_fileid_274__destroyerops__start318752__-5_0dB__snr-4.0__tl-31.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/LGDK-Net/0092_clean_fileid_274__destroyerops__start318752__-5_0dB__snr-4.0__tl-31.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/Mamba-SEUNet/0092_clean_fileid_274__destroyerops__start318752__-5_0dB__snr-4.0__tl-31.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/MP-SENet/0092_clean_fileid_274__destroyerops__start318752__-5_0dB__snr-4.0__tl-31.wav"></audio></td>
-                </tr>
-
-                <tr>
-                    <td class="condition-col">
-                        Babble / SNR -1.0 dB
-                        <span class="file-name">0131_clean_fileid_201...</span>
-                    </td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/clean/0131_clean_fileid_201__babble__start3207637__-5_0dB__snr-1.0__tl-29.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/CMGAN/0131_clean_fileid_201__babble__start3207637__-5_0dB__snr-1.0__tl-29.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/LGDK-Net/0131_clean_fileid_201__babble__start3207637__-5_0dB__snr-1.0__tl-29.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/Mamba-SEUNet/0131_clean_fileid_201__babble__start3207637__-5_0dB__snr-1.0__tl-29.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-5dB/MP-SENet/0131_clean_fileid_201__babble__start3207637__-5_0dB__snr-1.0__tl-29.wav"></audio></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-
-    <!-- ===================== NoiseX-92 -10dB ===================== -->
-    <h2>NoiseX-92: -10 to -5 dB</h2>
-    <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th style="text-align: left;">Condition (SNR)</th>
-                    <th>Clean</th>
-                    <th>CMGAN</th>
-                    <th>LGDK-Net</th>
-                    <th>Mamba-SEUNet</th>
-                    <th>MP-SENet</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td class="condition-col">
-                        Babble / SNR -6.0 dB
-                        <span class="file-name">0091_clean_fileid_81...</span>
-                    </td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/clean/0091_clean_fileid_81__babble__start1308443__-10_-5dB__snr-6.0__tl-31.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/CMGAN/0091_clean_fileid_81__babble__start1308443__-10_-5dB__snr-6.0__tl-31.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/LGDK-Net/0091_clean_fileid_81__babble__start1308443__-10_-5dB__snr-6.0__tl-31.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/Mamba-SEUNet/0091_clean_fileid_81__babble__start1308443__-10_-5dB__snr-6.0__tl-31.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/MP-SENet/0091_clean_fileid_81__babble__start1308443__-10_-5dB__snr-6.0__tl-31.wav"></audio></td>
-                </tr>
-
-                <tr>
-                    <td class="condition-col">
-                        Machinegun / SNR -10.0 dB
-                        <span class="file-name">0138_clean_fileid_143...</span>
-                    </td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/clean/0138_clean_fileid_143__machinegun__start1733285__-10_-5dB__snr-10.0__tl-24.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/CMGAN/0138_clean_fileid_143__machinegun__start1733285__-10_-5dB__snr-10.0__tl-24.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/LGDK-Net/0138_clean_fileid_143__machinegun__start1733285__-10_-5dB__snr-10.0__tl-24.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/Mamba-SEUNet/0138_clean_fileid_143__machinegun__start1733285__-10_-5dB__snr-10.0__tl-24.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/MP-SENet/0138_clean_fileid_143__machinegun__start1733285__-10_-5dB__snr-10.0__tl-24.wav"></audio></td>
-                </tr>
-
-                <tr>
-                    <td class="condition-col">
-                        Destroyerengine / SNR -7.0 dB
-                        <span class="file-name">0122_clean_fileid_175...</span>
-                    </td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/clean/0122_clean_fileid_175__destroyerengine__start11222__-10_-5dB__snr-7.0__tl-19.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/CMGAN/0122_clean_fileid_175__destroyerengine__start11222__-10_-5dB__snr-7.0__tl-19.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/LGDK-Net/0122_clean_fileid_175__destroyerengine__start11222__-10_-5dB__snr-7.0__tl-19.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/Mamba-SEUNet/0122_clean_fileid_175__destroyerengine__start11222__-10_-5dB__snr-7.0__tl-19.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/MP-SENet/0122_clean_fileid_175__destroyerengine__start11222__-10_-5dB__snr-7.0__tl-19.wav"></audio></td>
-                </tr>
-
-                <tr>
-                    <td class="condition-col">
-                        Buccaneer1 / SNR -7.0 dB
-                        <span class="file-name">0015_clean_fileid_283...</span>
-                    </td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/clean/0015_clean_fileid_283__buccaneer1__start2763973__-10_-5dB__snr-7.0__tl-32.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/CMGAN/0015_clean_fileid_283__buccaneer1__start2763973__-10_-5dB__snr-7.0__tl-32.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/LGDK-Net/0015_clean_fileid_283__buccaneer1__start2763973__-10_-5dB__snr-7.0__tl-32.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/Mamba-SEUNet/0015_clean_fileid_283__buccaneer1__start2763973__-10_-5dB__snr-7.0__tl-32.wav"></audio></td>
-                    <td><audio controls preload="none" src="./demo/Noisex92-10dB/MP-SENet/0015_clean_fileid_283__buccaneer1__start2763973__-10_-5dB__snr-7.0__tl-32.wav"></audio></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <div id="demo-content"></div>
 </div>
+
+<script>
+    const modelColumns = [
+        { label: "Clean", folder: "clean" },
+        { label: "Noisy", folder: "noisy" },
+        { label: "LGDK-Net", folder: "LGDK-Net" },
+        { label: "CMGAN", folder: "CMGAN" },
+        { label: "MP-SENet", folder: "MP-SENet" },
+        { label: "SEMamba", folder: "SEMamba" },
+        { label: "Mamba-SEUNet", folder: "Mamba-SEUNet" },
+        { label: "PrimeK-Net", folder: "PrimeK-Net" }
+    ];
+
+    const datasets = [
+        {
+            title: "DNS-Challenge: -10 dB",
+            basePath: "./demo/DNS-10dB",
+            rows: [
+                {
+                    condition: "-10 dB",
+                    displayName: "11.wav",
+                    fileName: "11.wav"
+                },
+                {
+                    condition: "-10 dB",
+                    displayName: "95.wav",
+                    fileName: "95.wav"
+                },
+                {
+                    condition: "-10 dB",
+                    displayName: "76.wav",
+                    fileName: "76.wav"
+                },
+                {
+                    condition: "-10 dB",
+                    displayName: "84.wav",
+                    fileName: "84.wav"
+                }
+            ]
+        },
+
+        {
+            title: "DNS-Challenge: -15 dB",
+            basePath: "./demo/DNS-15dB",
+            rows: [
+                {
+                    condition: "-15 dB",
+                    displayName: "11.wav",
+                    fileName: "11.wav"
+                },
+                {
+                    condition: "-15 dB",
+                    displayName: "145.wav",
+                    fileName: "145.wav"
+                },
+                {
+                    condition: "-15 dB",
+                    displayName: "94.wav",
+                    fileName: "94.wav"
+                },
+                {
+                    condition: "-15 dB",
+                    displayName: "116.wav",
+                    fileName: "116.wav"
+                }
+            ]
+        },
+
+        {
+            title: "NoiseX-92: -5 to 0 dB",
+            basePath: "./demo/Noisex92-5dB",
+            rows: [
+                {
+                    condition: "Babble / SNR -1.0 dB",
+                    displayName: "0116_clean_fileid_127...",
+                    fileName: "0116_clean_fileid_127__babble__start636389__-5_0dB__snr-1.0__tl-21.wav"
+                },
+                {
+                    condition: "Babble / SNR -1.0 dB",
+                    displayName: "0131_clean_fileid_201...",
+                    fileName: "0131_clean_fileid_201__babble__start3207637__-5_0dB__snr-1.0__tl-29.wav"
+                },
+                {
+                    condition: "Machinegun / SNR -4.0 dB",
+                    displayName: "0138_clean_fileid_143...",
+                    fileName: "0138_clean_fileid_143__machinegun__start1733285__-5_0dB__snr-4.0__tl-26.wav"
+                },
+                {
+                    condition: "Destroyerops / SNR -4.0 dB",
+                    displayName: "0092_clean_fileid_274...",
+                    fileName: "0092_clean_fileid_274__destroyerops__start318752__-5_0dB__snr-4.0__tl-31.wav"
+                }
+            ]
+        },
+
+        {
+            title: "NoiseX-92: -10 to -5 dB",
+            basePath: "./demo/Noisex92-10dB",
+            rows: [
+                {
+                    condition: "Babble / SNR -6.0 dB",
+                    displayName: "0091_clean_fileid_81...",
+                    fileName: "0091_clean_fileid_81__babble__start1308443__-10_-5dB__snr-6.0__tl-31.wav"
+                },
+                {
+                    condition: "Destroyerengine / SNR -7.0 dB",
+                    displayName: "0122_clean_fileid_175...",
+                    fileName: "0122_clean_fileid_175__destroyerengine__start11222__-10_-5dB__snr-7.0__tl-19.wav"
+                },
+                {
+                    condition: "Buccaneer1 / SNR -7.0 dB",
+                    displayName: "0015_clean_fileid_283...",
+                    fileName: "0015_clean_fileid_283__buccaneer1__start2763973__-10_-5dB__snr-7.0__tl-32.wav"
+                },
+                {
+                    condition: "Machinegun / SNR -10.0 dB",
+                    displayName: "0138_clean_fileid_143...",
+                    fileName: "0138_clean_fileid_143__machinegun__start1733285__-10_-5dB__snr-10.0__tl-24.wav"
+                }
+            ]
+        }
+    ];
+
+    function createAudioCell(basePath, folder, fileName) {
+        const src = `${basePath}/${folder}/${fileName}`;
+
+        return `
+            <td>
+                <audio controls preload="none" src="${src}">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+        `;
+    }
+
+    function createTable(dataset) {
+        const tableHead = `
+            <h2>${dataset.title}</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="text-align: left;">Condition (SNR)</th>
+                            ${modelColumns.map(model => `<th>${model.label}</th>`).join("")}
+                        </tr>
+                    </thead>
+                    <tbody>
+        `;
+
+        const tableBody = dataset.rows.map(row => `
+            <tr>
+                <td class="condition-col">
+                    ${row.condition}
+                    <span class="file-name">${row.displayName}</span>
+                </td>
+                ${modelColumns.map(model => createAudioCell(dataset.basePath, model.folder, row.fileName)).join("")}
+            </tr>
+        `).join("");
+
+        const tableFooter = `
+                    </tbody>
+                </table>
+            </div>
+        `;
+
+        return tableHead + tableBody + tableFooter;
+    }
+
+    document.getElementById("demo-content").innerHTML = datasets.map(createTable).join("");
+</script>
 
 </body>
 </html>
